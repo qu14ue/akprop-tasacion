@@ -1145,7 +1145,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <nav class="nav">
       <a href="#proceso">Cómo funciona</a>
       <a href="#por-que">Nosotros</a>
-      <a href="#tasacion" class="btn-sm">Tasá tu propiedad</a>
+      <a href="#tasacion" class="btn-sm" data-track="nav_cta_form">Tasá tu propiedad</a>
     </nav>
   </div>
 </header>
@@ -1166,10 +1166,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         tu propiedad de particular y cómo está el mercado hoy. Eso es lo que hago, y lo hago yo.
       </p>
       <div class="hero-ctas reveal d3">
-        <a href="#tasacion" class="btn btn-primary">
+        <a href="#tasacion" class="btn btn-primary" data-track="hero_cta_form">
           Quiero saber cuánto vale <span class="arr">→</span>
         </a>
-        <a href="#proceso" class="btn hero-btn-secondary">Cómo funciona <span class="arr">→</span></a>
+        <a href="#proceso" class="btn hero-btn-secondary" data-track="hero_cta_proceso">Cómo funciona <span class="arr">→</span></a>
       </div>
       <p class="hero-magnet reveal d3">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M4 19h16"/></svg>
@@ -1233,7 +1233,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="field-err">Elegí un tipo.</div>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Solicitar tasación <span class="arr">→</span></button>
+      <button type="submit" class="btn btn-primary" data-track="form_submit">Solicitar tasación <span class="arr">→</span></button>
       <small>Sin costo ni compromiso · Te contacto yo, Ariel</small>
     </form>
   </div>
@@ -1330,7 +1330,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="informe-tag">9 secciones · PDF</span>
         <h3>Te lo dejo <em>por escrito</em>, para que lo puedas leer dos veces.</h3>
         <p>Casi todas las tasaciones se dicen y se olvidan. Esta te queda: la releés con tiempo, se la mostrás a tu familia, la comparás con otra opinión. Y si al final decidís no vender, o vender con otro, el informe es tuyo igual.</p>
-        <a href="#tasacion" class="btn btn-primary">Quiero el mío <span class="arr">→</span></a>
+        <a href="#tasacion" class="btn btn-primary" data-track="informe_cta_form">Quiero el mío <span class="arr">→</span></a>
         <small>Apenas dejás tus datos te llega un informe modelo completo en PDF, para que veas exactamente qué vas a recibir.</small>
       </div>
     </div>
@@ -1363,7 +1363,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="recibis-cta reveal d2">
         <p>Sin costo y sin compromiso.<br>El informe es tuyo, vendas conmigo o no.</p>
-        <a href="#tasacion" class="btn btn-primary">Pedir mi tasación <span class="arr">→</span></a>
+        <a href="#tasacion" class="btn btn-primary" data-track="recibis_cta_form">Pedir mi tasación <span class="arr">→</span></a>
       </div>
     </div>
 
@@ -1466,7 +1466,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="asesor-sep"></div>
       <div class="why-cta reveal">
         <p class="why-cta-copy">¿Querés que trabaje así<br>con tu propiedad?</p>
-        <a href="#tasacion" class="btn btn-primary">Pedir mi tasación <span class="arr">→</span></a>
+        <a href="#tasacion" class="btn btn-primary" data-track="why_cta_form">Pedir mi tasación <span class="arr">→</span></a>
       </div>
     </div>
   </div>
@@ -1527,7 +1527,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap">
     <div class="reviews-head">
       <h2 class="reveal">Lo que dicen los que ya <em>vendieron</em> conmigo.</h2>
-      <a class="reviews-link reveal d1" href="https://search.google.com/local/reviews?placeid=ChIJqZKd61S3vJURcSW93hbpDwU" target="_blank" rel="noopener">Ver todas en Google →</a>
+      <a class="reviews-link reveal d1" href="https://search.google.com/local/reviews?placeid=ChIJqZKd61S3vJURcSW93hbpDwU" target="_blank" rel="noopener" data-track="reviews_google">Ver todas en Google →</a>
     </div>
     <div class="reviews-grid">
       <article class="review reveal">
@@ -1731,7 +1731,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <div class="submit-row">
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" class="btn btn-primary" data-track="form_submit">
           Solicitar mi tasación <span class="arr">→</span>
         </button>
         <div class="privacy">
@@ -1744,7 +1744,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="26" height="26"><path d="M5 13l4 4L19 7"/></svg>
         </div>
         <h4>¡Listo! Recibí tu solicitud.</h4>
-        <p>Te escribo por WhatsApp dentro de las próximas 24 horas. Si querés adelantarte, <a id="waLink" href="#" style="text-decoration:underline">escribime ahora</a>.</p>
+        <p>Te escribo por WhatsApp dentro de las próximas 24 horas. Si querés adelantarte, <a id="waLink" href="#" style="text-decoration:underline" data-track="cta_whatsapp_final">escribime ahora</a>.</p>
       </div>
     </form>
   </div>
@@ -1771,7 +1771,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div>
         <h5>Contacto</h5>
         <ul>
-          <li><a href="https://wa.me/5491125466099" target="_blank" rel="noopener">+54 9 11 2546-6099</a></li>
+          <li><a href="https://wa.me/5491125466099" target="_blank" rel="noopener" data-track="footer_whatsapp">+54 9 11 2546-6099</a></li>
           <li><a href="mailto:ariel@akprop.com.ar">ariel@akprop.com.ar</a></li>
           <li><a href="https://akprop.com.ar" target="_blank" rel="noopener">akprop.com.ar</a></li>
           <li style="margin-top:6px;opacity:.8">Av. Francisco Beiro 5023, 7° E<br>Buenos Aires</li>
@@ -1810,7 +1810,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ─────────────────────────────────────────
      WHATSAPP FLOAT
      ───────────────────────────────────────── -->
-<a class="wa" id="waFloat" href="https://wa.me/5491125466099?text=Hola%20Ariel%2C%20quiero%20saber%20cu%C3%A1nto%20vale%20mi%20propiedad." target="_blank" rel="noopener" aria-label="Chatear por WhatsApp">
+<a class="wa" id="waFloat" href="https://wa.me/5491125466099?text=Hola%20Ariel%2C%20quiero%20saber%20cu%C3%A1nto%20vale%20mi%20propiedad." target="_blank" rel="noopener" aria-label="Chatear por WhatsApp" data-track="wa_float_click">
   <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 .4C7.4.4.4 7.4.4 16c0 2.8.7 5.5 2.1 7.9L.2 31.6l7.9-2.1c2.3 1.3 4.9 2 7.6 2h.3c8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4zm0 28.5c-2.4 0-4.8-.6-6.8-1.9l-.5-.3-4.7 1.2 1.3-4.6-.3-.5c-1.4-2.2-2.1-4.7-2.1-7.3C2.9 8.8 8.8 2.9 16 2.9S29.1 8.8 29.1 16 23.2 28.9 16 28.9zm7.2-9.7c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.3 1.5-.2.3-.5.3-.9.1-.4-.2-1.7-.6-3.2-2-1.2-1-2-2.3-2.2-2.7-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.6.1-.3.1-.5 0-.7 0-.2-.9-2.1-1.2-2.9-.3-.8-.7-.7-.9-.7h-.8c-.3 0-.7.1-1 .5-.4.4-1.4 1.3-1.4 3.2s1.4 3.7 1.6 4c.2.3 2.8 4.3 6.8 6 .9.4 1.7.6 2.3.8.9.3 1.8.3 2.4.2.7-.1 2.3-.9 2.6-1.9.3-.9.3-1.7.2-1.9-.1-.2-.3-.3-.7-.5z"/></svg>
   <span>Escribime por WhatsApp</span>
 </a>
@@ -1975,9 +1975,15 @@ async function enviarLead(form, data){
     form_type:        'landing-tasacion',
     form_position:    formId,
     lead_type:        'tasacion',
+    item_id:          'servicio-tasacion',
+    // Valor asignado a un lead de captación (no es el precio de una propiedad).
+    // Va en ARS: las landings de propiedad mandan USD, así que el tag de GTM
+    // tiene que leer 'currency' del dataLayer y NO tenerlo fijo en USD.
+    value:            100000,
+    currency:         'ARS',
     property_type:    tipo,
-    property_area:    direccion,
-    currency:         'USD',
+    property_zone:    direccion,
+    property_size:    superficie,
     captured_name:    nombre,
     captured_phone:   normalizarTel(contacto),
   }, utms));
