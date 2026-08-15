@@ -282,6 +282,12 @@ h1,h2,h3{margin:0;font-weight:400}
 .hero-form p{font-size:13px;color:var(--muted);margin:0 0 20px}
 .hero-form .hfgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .hero-form .hfgrid .full{grid-column:1/-1}
+/* En mobile los campos van a ancho completo: los labels largos
+   ("Barrio o dirección") se partían en dos líneas y desalineaban la fila,
+   y el texto tipeado (dirección, teléfono) no entraba en media columna. */
+@media (max-width:640px){
+  .hero-form .hfgrid{grid-template-columns:1fr;gap:12px}
+}
 .hero-form label{
   display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
   color:var(--muted);margin-bottom:6px;font-weight:500;
@@ -833,6 +839,9 @@ section{padding:120px 0;position:relative}
 @media (max-width:768px){
   .form-card{padding-left:16px;padding-right:16px;width:100%}
   .field input,.field select,.field textarea{width:100%;box-sizing:border-box}
+}
+@media (max-width:640px){
+  .fg{grid-template-columns:1fr}
 }
 
 /* success state */
