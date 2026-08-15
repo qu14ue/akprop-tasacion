@@ -2001,10 +2001,13 @@ async function enviarLead(form, data){
     lead_type:        'tasacion',
     item_id:          'servicio-tasacion',
     // Valor asignado a un lead de captación (no es el precio de una propiedad).
-    // Va en ARS: las landings de propiedad mandan USD, así que el tag de GTM
-    // tiene que leer 'currency' del dataLayer y NO tenerlo fijo en USD.
-    value:            100000,
-    currency:         'ARS',
+    // USD 50, en dólares a propósito: el tag "FB2 - Lead" de GTM tiene
+    // currency fijo en "USD" y lee el precio de la clave 'item_price'
+    // (variable JS 'item_price' del contenedor). Se mandan las dos claves:
+    // 'item_price' para GTM y 'value' por si algún tag futuro usa el estándar.
+    item_price:       50,
+    value:            50,
+    currency:         'USD',
     property_type:    tipo,
     property_zone:    direccion,
     property_size:    superficie,
