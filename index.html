@@ -178,6 +178,16 @@ h1,h2,h3{margin:0;font-weight:400}
 .nav .btn-sm:hover{background:currentColor;color:var(--bg)}
 .hdr.is-scrolled .nav .btn-sm:hover{color:#fff}
 @media (max-width:860px){.nav a:not(.btn-sm){display:none}}
+@media (max-width:640px){
+  .nav{gap:0}
+  .nav .btn-sm{
+    padding:9px 15px;font-size:11px;letter-spacing:.06em;
+    white-space:nowrap;
+  }
+}
+@media (max-width:360px){
+  .nav .btn-sm{padding:8px 12px;font-size:10.5px;letter-spacing:.04em}
+}
 
 /* ─────────────────────────────────────────
    HERO
@@ -320,6 +330,10 @@ h1,h2,h3{margin:0;font-weight:400}
 }
 .hero-magnet svg{width:15px;height:15px;stroke:var(--orange);fill:none;stroke-width:2;flex-shrink:0}
 .hero-magnet b{font-weight:500;color:#fff}
+@media (max-width:640px){
+  .hero-magnet{margin-top:26px;align-items:flex-start;line-height:1.5}
+  .hero-magnet svg{margin-top:2px}
+}
 
 /* Buttons */
 .btn{
@@ -340,6 +354,7 @@ h1,h2,h3{margin:0;font-weight:400}
 .btn-ink-outline:hover{background:var(--ink);color:#fff}
 
 .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+@media (max-width:640px){.hero-ctas{gap:14px}}
 .hero-btn-secondary{
   background:transparent;color:#fff;border:1px solid #fff;
   padding:16px 28px;font-family:'Inter',sans-serif;font-weight:500;
@@ -910,7 +925,7 @@ section{padding:120px 0;position:relative}
   color:rgba(255,255,255,.7);margin-top:3px;
 }
 @media (max-width:640px){
-  .hero-author{margin-top:24px;gap:12px}
+  .hero-author{margin-top:34px;gap:12px}
   .hero-author img{width:54px;height:54px}
   .hero-author strong{font-size:17px}
   .hero-author span{font-size:10.5px;letter-spacing:.05em}
