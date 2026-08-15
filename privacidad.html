@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — AKPROP</title>
+  <meta name="description" content="Política de privacidad de AKPROP — Ariel Kuznicki Propiedades. Cómo tratamos los datos personales que recibimos a través del formulario de tasación.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://tasacion.akprop.com.ar/privacidad.html">
+  <link rel="icon" href="assets/logo-black.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --ink: #0e0e0e;
+      --ink-soft: #3a3a3a;
+      --ink-muted: #8a8a8a;
+      --paper: #faf8f5;
+      --paper-alt: #f4f1ea;
+      --line: #e2ddd4;
+      --orange: #e8593c;
+      --white: #ffffff;
+      --f-serif: 'Fraunces', Georgia, serif;
+      --f-sans: 'Inter', system-ui, sans-serif;
+      --container: 720px;
+      --pad-x: 24px;
+    }
+
+    @media (min-width: 768px) {
+      :root {
+        --pad-x: 40px;
+      }
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--f-sans);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.75;
+      color: var(--ink);
+      background: var(--paper);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--orange);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Header ─────────────────────────────────────────── */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      background: rgba(250, 248, 245, 0.95);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .site-header__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1280px;
+      margin-inline: auto;
+      padding-inline: var(--pad-x);
+    }
+
+    .site-header__logo img {
+      height: 28px;
+      width: auto;
+    }
+
+    .site-header__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-muted);
+      transition: color .2s;
+    }
+
+    .site-header__back:hover {
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .site-header__back svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+    }
+
+    /* ── Content ─────────────────────────────────────────── */
+    .content {
+      max-width: var(--container);
+      margin-inline: auto;
+      padding: 72px var(--pad-x) 120px;
+    }
+
+    .content__eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 20px;
+    }
+
+    .content__eyebrow::before {
+      content: '';
+      width: 24px;
+      height: 1px;
+      background: var(--orange);
+    }
+
+    .content__title {
+      font-family: var(--f-serif);
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 400;
+      line-height: 1.05;
+      letter-spacing: -0.025em;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+
+    .content__subtitle {
+      font-size: 14px;
+      color: var(--ink-muted);
+      margin-bottom: 56px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    /* ── Typography ──────────────────────────────────────── */
+    .content h2 {
+      font-family: var(--f-serif);
+      font-size: clamp(20px, 2.5vw, 24px);
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.015em;
+      color: var(--ink);
+      margin-top: 48px;
+      margin-bottom: 16px;
+    }
+
+    .content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .content p {
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--ink-soft);
+      margin-bottom: 16px;
+    }
+
+    .content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .content ul {
+      list-style: none;
+      margin-bottom: 16px;
+    }
+
+    .content ul li {
+      position: relative;
+      padding-left: 20px;
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--ink-soft);
+      margin-bottom: 8px;
+    }
+
+    .content ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--orange);
+      font-size: 12px;
+      top: 4px;
+    }
+
+    .content strong {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .content a {
+      color: var(--orange);
+    }
+
+    .highlight-box {
+      background: var(--paper-alt);
+      border-left: 3px solid var(--orange);
+      padding: 20px 24px;
+      margin: 32px 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+
+    /* ── Footer ──────────────────────────────────────────── */
+    .site-footer {
+      border-top: 1px solid var(--line);
+      padding: 32px var(--pad-x);
+      text-align: center;
+      font-size: 12px;
+      color: var(--ink-muted);
+    }
+
+    .site-footer a {
+      color: var(--ink-muted);
+    }
+
+    .site-footer a:hover {
+      color: var(--ink);
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="https://akprop.com.ar" class="site-header__logo" aria-label="AKPROP">
+      <img src="assets/logo-black.png" alt="AKPROP — Ariel Kuznicki Propiedades">
+    </a>
+    <a href="index.html" class="site-header__back">
+      <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Volver a la tasación
+    </a>
+  </div>
+</header>
+
+<main class="content">
+
+  <div class="content__eyebrow">Legal</div>
+  <h1 class="content__title">Política de Privacidad</h1>
+  <p class="content__subtitle">Última actualización: agosto de 2026 · AKPROP — Ariel Kuznicki Propiedades</p>
+
+  <div class="highlight-box">
+    <p><strong>Resumen simple:</strong> solo usamos tus datos para responderte. No los vendemos, no los cedemos a terceros y no enviamos publicidad sin tu consentimiento.</p>
+  </div>
+
+  <h2>1. Responsable del tratamiento</h2>
+  <p>
+    El responsable del tratamiento de los datos personales recolectados a través de esta página es
+    <strong>Ariel Kuznicki</strong>, titular de AKPROP — Ariel Kuznicki Propiedades,
+    con matrícula CUCICBA 8789 y CMCPSI 6914, con domicilio en
+    Av. Francisco Beiro 5023, 7° E, Ciudad Autónoma de Buenos Aires, Argentina.
+  </p>
+  <p>
+    Podés contactarnos en cualquier momento en
+    <a href="mailto:ariel@akprop.com.ar">ariel@akprop.com.ar</a> o al
+    <a href="https://wa.me/5491125466099">+54 9 11 2546-6099</a>.
+  </p>
+
+  <h2>2. Qué datos recolectamos</h2>
+  <p>A través de esta página podemos recolectar los siguientes datos personales:</p>
+  <ul>
+    <li><strong>Nombre y apellido</strong>, proporcionados voluntariamente en el formulario de contacto.</li>
+    <li><strong>Número de WhatsApp o dirección de correo electrónico</strong>, para coordinar la visita o responder tu consulta.</li>
+    <li><strong>Horario de disponibilidad</strong>, si lo indicás de forma opcional en el formulario.</li>
+    <li><strong>Datos técnicos básicos</strong> (dirección IP, tipo de navegador, páginas visitadas), recolectados automáticamente por el servidor de hosting con fines estadísticos.</li>
+  </ul>
+  <p>No recolectamos datos sensibles (salud, ideología, origen racial, datos financieros) ni datos de menores de 18 años de forma intencional.</p>
+
+  <h2>3. Finalidad y base legal del tratamiento</h2>
+  <p>Tratamos tus datos exclusivamente para las siguientes finalidades:</p>
+  <ul>
+    <li><strong>Gestionar tu solicitud de tasación</strong> y contactarte para conocer los datos de la propiedad. Base legal: ejecución de la solicitud que realizaste (consentimiento explícito al completar el formulario).</li>
+    <li><strong>Comunicarnos con vos</strong> por WhatsApp o correo electrónico en respuesta a tu mensaje. Base legal: interés legítimo de responder a quien toma contacto de forma voluntaria.</li>
+    <li><strong>Estadísticas anónimas</strong> sobre el uso de la página (páginas vistas, tiempo de sesión). Base legal: interés legítimo. Estos datos no se vinculan a tu identidad.</li>
+  </ul>
+  <p>No utilizamos tus datos para campañas de marketing sin tu consentimiento previo y expreso.</p>
+
+  <h2>4. Transferencia a terceros</h2>
+  <p>No vendemos, alquilamos ni cedemos tus datos a terceros con fines comerciales.</p>
+  <p>Tus datos pueden ser procesados por los siguientes proveedores de infraestructura, únicamente en la medida necesaria para la prestación del servicio:</p>
+  <ul>
+    <li><strong>WhatsApp / Meta Platforms</strong>: cuando hacés clic en un enlace de WhatsApp, la comunicación queda sujeta a la política de privacidad de WhatsApp.</li>
+    <li><strong>Google Maps</strong>: el mapa integrado en la página puede recolectar datos según la política de privacidad de Google.</li>
+    <li><strong>Google Fonts</strong>: las tipografías se sirven desde los servidores de Google, lo que puede registrar tu IP.</li>
+    <li><strong>YouTube</strong>: el video del recorrido solo se carga cuando hacés clic en reproducir. En ese momento aplica la política de privacidad de YouTube/Google.</li>
+    <li><strong>Proveedor de hosting</strong>: el servidor donde se aloja esta página puede conservar logs de acceso por hasta 30 días con fines de seguridad.</li>
+  </ul>
+  <p>En ningún caso transferimos datos a países que no ofrezcan un nivel adecuado de protección sin las garantías apropiadas.</p>
+
+  <h2>5. Plazo de conservación</h2>
+  <p>
+    Conservamos los datos de contacto (nombre y medio de comunicación) mientras la consulta esté activa y hasta 12 meses después del último intercambio, salvo que nos pidás su eliminación antes.
+    Los datos técnicos de servidor se eliminan automáticamente a los 30 días.
+  </p>
+
+  <h2>6. Tus derechos</h2>
+  <p>De acuerdo con la <strong>Ley 25.326 de Protección de Datos Personales</strong> de la República Argentina y sus normas complementarias, tenés derecho a:</p>
+  <ul>
+    <li><strong>Acceder</strong> a los datos personales que conservamos sobre vos.</li>
+    <li><strong>Rectificar</strong> datos inexactos o incompletos.</li>
+    <li><strong>Suprimir</strong> tus datos cuando ya no sean necesarios para la finalidad para la que fueron recolectados.</li>
+    <li><strong>Oponerte</strong> al tratamiento en cualquier momento.</li>
+    <li><strong>Revocar</strong> el consentimiento otorgado, sin que eso afecte la licitud del tratamiento previo a la revocación.</li>
+  </ul>
+  <p>
+    Para ejercer cualquiera de estos derechos, escribinos a
+    <a href="mailto:ariel@akprop.com.ar">ariel@akprop.com.ar</a> indicando tu nombre y la solicitud.
+    Respondemos en un plazo máximo de 15 días hábiles.
+  </p>
+  <p>
+    También podés presentar una reclamación ante la
+    <strong>Dirección Nacional de Protección de Datos Personales</strong> (DNPDP) de Argentina,
+    autoridad de control competente.
+  </p>
+
+  <h2>7. Cookies y tecnologías de seguimiento</h2>
+  <p>
+    Esta página no instala cookies propias de seguimiento ni publicidad.
+    Puede que terceros integrados (Google Maps, YouTube, Google Fonts) depositen cookies propias
+    en tu navegador según sus respectivas políticas, sobre las cuales no tenemos control.
+  </p>
+  <p>Podés gestionar o bloquear cookies desde la configuración de tu navegador en cualquier momento.</p>
+
+  <h2>8. Seguridad</h2>
+  <p>
+    Aplicamos medidas técnicas y organizativas razonables para proteger tus datos frente a accesos no autorizados,
+    pérdida o divulgación accidental. La comunicación entre tu navegador y nuestro servidor se realiza
+    mediante protocolo HTTPS con cifrado TLS.
+  </p>
+
+  <h2>9. Cambios en esta política</h2>
+  <p>
+    Podemos actualizar esta política ocasionalmente. Cuando lo hagamos, revisaremos la fecha de "última actualización"
+    al inicio del documento. Te recomendamos revisarla periódicamente.
+    El uso continuado de la página después de publicada una modificación implica la aceptación de los cambios.
+  </p>
+
+  <h2>10. Contacto</h2>
+  <p>
+    Para cualquier consulta sobre esta política o sobre el tratamiento de tus datos personales:
+  </p>
+  <ul>
+    <li>Email: <a href="mailto:ariel@akprop.com.ar">ariel@akprop.com.ar</a></li>
+    <li>WhatsApp: <a href="https://wa.me/5491125466099">+54 9 11 2546-6099</a></li>
+    <li>Dirección: Av. Francisco Beiro 5023, 7° E, CABA, Argentina</li>
+  </ul>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 AKPROP — Ariel Kuznicki Propiedades · Mat. CUCICBA 8789 · CMCPSI 6914 ·
+    <a href="index.html">Volver a la tasación</a>
+  </p>
+</footer>
+
+</body>
+</html>

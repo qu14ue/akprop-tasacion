@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /gracias.html
+Disallow: /assets/informe-tasacion-modelo-akprop.pdf
+
+Sitemap: https://tasacion.akprop.com.ar/sitemap.xml
